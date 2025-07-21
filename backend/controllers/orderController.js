@@ -170,25 +170,25 @@ const placeOrderRazorPay = async (req, res) => {
 
 // All Orders data for admin Panel
 const allOrders = async (req, res) => {
-  /*try {
+  try {
     const orders = await orderModel.find({});
     res.json({ success: true, orders });
   } catch (error) {
     console.log(error);
     res.json({ success: false, message: error.message });
-  }*/
+  }
 };
 
 // User Orders data for Frontend
 const userOrders = async (req, res) => {
-  /*try {
+  try {
     const { userId } = req.body;
     const orders = await orderModel.find({ userId });
     res.json({ success: true, orders });
   } catch (error) {
     console.log(error);
     res.json({ success: false, message: error.message });
-  }*/
+  }
 };
 
 // Update Order Status fron admin panel
