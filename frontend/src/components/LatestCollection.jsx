@@ -14,12 +14,12 @@ const LatestCollection = () => {
     },[products])
 
     return (
-    <div className='my-10'>
+    <div className='my-10 '>
       <div className='text-center py-8 text-3xl'>
 
         <Title text1={'LATEST'} text2={'COLLECTIONS'}/>
-        <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-[#714329]'>
-        hi this is a webpage created by me
+        <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-[#262220]'>
+        Exciting Gift hammper's for all occasions. Explore our latest collection of curated products designed to bring joy and convenience to your celebrations. From festive treats to thoughtful gifts, discover the perfect way to make every moment special.
         </p>
       </div>
 
