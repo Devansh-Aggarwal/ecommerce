@@ -14,8 +14,8 @@ const Add = ({token}) => {
   const [name,setName] = useState("");
   const [description,setDescription] = useState("");
   const [price,setPrice] = useState("");
-  const [category,setCategory] = useState("Men");
-  const [subCategory,setSubCategory] = useState("Topwear");
+  const [category,setCategory] = useState("Nuts & Dates");
+  const [subCategory,setSubCategory] = useState("Jumbo Packs");
   const [bestseller,setBestseller] = useState(false);
   const [sizes,setSizes] = useState([]);
 
@@ -61,7 +61,7 @@ const Add = ({token}) => {
   return (
     <form onSubmit={onSubmitHandler} className='flex flex-col w-full items-start gap-3'>
       <div>
-        <p className='mb-2'>Upload Image</p>
+        <p className='mb-2 text-[#262220]'>Upload Image</p>
 
         <div className='flex gap-2'>
           <label htmlFor="image1">
@@ -84,64 +84,65 @@ const Add = ({token}) => {
       </div>
 
       <div className='w-full' >
-        <p className='mb-2' >Product Name</p>
+        <p className='mb-2 text-[#262220]' >Product Name</p>
         <input onChange={(e)=>setName(e.target.value)} value={name} className='w-full max-w-[500px] px-3 py-2 ' type="text" placeholder='Type here' required />
       </div>
 
       <div className='w-full' >
-        <p className='mb-2' >Product Description</p>
+        <p className='mb-2 text-[#262220]' >Product Description</p>
         <textarea onChange={(e)=>setDescription(e.target.value)} value={description} className='w-full max-w-[500px] px-3 py-2 ' type="text" placeholder='Write Content here' required />
       </div>
 
       <div className='flex flex-col sm:flex-row gap-2 w-full sm:gap-8' >
         
         <div>
-          <p className='mb-2' >Product Category</p>
+          <p className='mb-2 text-[#262220]' >Product Category</p>
           <select onChange={(e)=>setCategory(e.target.value)} className='w-full px-3 py-2'>
-            <option value="Men">Men</option>
-            <option value="Women">Women</option>
-            <option value="Kids">Kids</option>
+            <option value="Men">Nuts & Dates</option>
+            <option value="Women">Dried Fruits & Berries</option>
+            <option value="Kids">Seeds</option>
+            <option value="Kids">Gift Packs</option>
           </select>
         </div>
 
         <div>
-          <p className='mb-2'>Sub-Category</p>
+          <p className='mb-2 text-[#262220]'>Sub-Category</p>
           <select onChange={(e)=>setSubCategory(e.target.value)} className='w-full px-3 py-2'>
-            <option value="Topwear">Topwear</option>
-            <option value="Bottomwear">Bottomwear</option>
-            <option value="Winterwear">Winterwear</option>
+            <option value="Topwear">Mixed Nuts</option>
+            <option value="Bottomwear">Jumbo Packs</option>
+            <option value="Winterwear">Snacks & Breakfast</option>
           </select  >
         </div>
 
         <div>
-          <p className='mb-2' >Product Price</p>
+          <p className='mb-2 text-[#262220]' >Product Price</p>
           <input onChange={(e)=>setPrice(e.target.value)} value={price} className='w-full px-3 py-2 sm:w-[120px]' type="number" placeholder='25' />
         </div>
         
       </div>
 
       <div>
-        <p className='mb-2' >Product Sizes</p>
+        <p className='mb-2 text-[#262220]' >Product Sizes</p>
         <div className='flex gap-3' >
 
           <div onClick={()=>setSizes(prev => prev.includes("S") ? prev.filter(item => item !== "S") : [...prev,"S"] )} >
-            <p className={`${sizes.includes("S") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`} >S</p>
+            <p className={`${sizes.includes("S") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`} >100gm</p>
           </div>
 
           <div onClick={()=>setSizes(prev => prev.includes("M") ? prev.filter(item => item !== "M") : [...prev,"M"] )} >
-            <p className={`${sizes.includes("M") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>M</p>
+            <p className={`${sizes.includes("M") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>250gm</p>
           </div>
 
           <div onClick={()=>setSizes(prev => prev.includes("L") ? prev.filter(item => item !== "L") : [...prev,"L"] )} >
-            <p className={`${sizes.includes("L") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>L</p>
+            <p className={`${sizes.includes("L") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>500gm</p>
           </div>
           
           <div onClick={()=>setSizes(prev => prev.includes("XL") ? prev.filter(item => item !== "XL") : [...prev,"XL"] )} >
-            <p className={`${sizes.includes("XL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XL</p>
+            <p className={`${sizes.includes("XL") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>1kg</p>
           </div>
           
           <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter(item => item !== "XXL") : [...prev,"XXL"] )} >
-            <p className={`${sizes.includes("XXL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
+            <p className={`${sizes.includes("XXL") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>2kg</p>
           </div>
 
         </div>
@@ -152,7 +153,7 @@ const Add = ({token}) => {
         <label className='cursor-pointer' htmlFor="bestseller">Add to Bestsellers</label>
       </div>
 
-      <button type="submit" className='w-28 py-3 mt-4 bg-black text-white' >ADD</button>
+      <button type="submit" className='w-28 py-3 mt-4 bg-[#714329] text-white' >ADD</button>
 
     </form>
   )

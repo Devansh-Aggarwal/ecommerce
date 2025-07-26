@@ -36,7 +36,7 @@ const Footer = () => {
 
       <div>
         <hr />
-        <p className='py-5 text-sm text-center text-[#714329]'>Copyright 2024@ rlda.com - ALL RIGHTS RESERVED.</p>
+        <p className='py-5 text-sm bg-[#f7f1f0] text-center text-[#714329]'>Copyright 2024@ rlda.com - ALL RIGHTS RESERVED.</p>
       </div>
 
     </div>

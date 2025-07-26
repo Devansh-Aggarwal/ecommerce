@@ -156,7 +156,7 @@ const PlaceOrder = () => {
             onChange={onChangeHandler}
             name="firstName"
             value={formData.firstName}
-            className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+            className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
             type="text"
             placeholder="First name"
           />
@@ -165,7 +165,7 @@ const PlaceOrder = () => {
             onChange={onChangeHandler}
             name="lastName"
             value={formData.lastName}
-            className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+            className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
             type="text"
             placeholder="Last name"
           />
@@ -175,7 +175,7 @@ const PlaceOrder = () => {
           onChange={onChangeHandler}
           name="email"
           value={formData.email}
-          className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+          className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
           type="email"
           placeholder="Email address"
         />
@@ -184,7 +184,7 @@ const PlaceOrder = () => {
           onChange={onChangeHandler}
           name="street"
           value={formData.street}
-          className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+          className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
           type="text"
           placeholder="Street"
         />
@@ -195,7 +195,7 @@ const PlaceOrder = () => {
             onChange={onChangeHandler}
             name="city"
             value={formData.city}
-            className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+            className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
             type="text"
             placeholder="City"
           />
@@ -204,7 +204,7 @@ const PlaceOrder = () => {
             onChange={onChangeHandler}
             name="state"
             value={formData.state}
-            className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+            className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
             type="text"
             placeholder="State"
           />
@@ -216,7 +216,7 @@ const PlaceOrder = () => {
             onChange={onChangeHandler}
             name="zipcode"
             value={formData.zipcode}
-            className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+            className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
             type="number"
             placeholder="Zip code"
           />
@@ -225,7 +225,7 @@ const PlaceOrder = () => {
             onChange={onChangeHandler}
             name="country"
             value={formData.country}
-            className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+            className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
             type="text"
             placeholder="Country"
           />
@@ -235,7 +235,7 @@ const PlaceOrder = () => {
           onChange={onChangeHandler}
           name="phone"
           value={formData.phone}
-          className="border border-gray-300 rounded py-1.5 px-3.5 w-full"
+          className="border border-[#b08463] bg-[#e9e6e1] rounded py-1.5 px-3.5 w-full"
           type="number"
           placeholder="Phone"
         />
@@ -280,7 +280,7 @@ const PlaceOrder = () => {
                   method === "cod" ? "bg-green-400" : ""
                 }`}
               ></p>
-              <p className="text-gray-500 text-sm font-medium mx-4">
+              <p className="text-[#262220] text-sm font-medium mx-4">
                 CASH ON DELIVERY
               </p>
             </div>
@@ -288,7 +288,7 @@ const PlaceOrder = () => {
           <div className="w-full text-end mt-8">
             <button
               type="submit"
-              className="bg-black text-white px-16 py-3 text-sm"
+              className="bg-[#714329] text-white px-16 py-3 text-sm"
             >
               PLACE ORDER
             </button>
