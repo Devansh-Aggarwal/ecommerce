@@ -98,19 +98,19 @@ const Add = ({token}) => {
         <div>
           <p className='mb-2 text-[#262220]' >Product Category</p>
           <select onChange={(e)=>setCategory(e.target.value)} className='w-full px-3 py-2'>
-            <option value="Men">Nuts & Dates</option>
-            <option value="Women">Dried Fruits & Berries</option>
-            <option value="Kids">Seeds</option>
-            <option value="Kids">Gift Packs</option>
+            <option value="Nuts & Dates">Nuts & Dates</option>
+            <option value="Dried Fruits & Berries">Dried Fruits & Berries</option>
+            <option value="Seeds">Seeds</option>
+            <option value="Gift Packs">Gift Packs</option>
           </select>
         </div>
 
         <div>
           <p className='mb-2 text-[#262220]'>Sub-Category</p>
           <select onChange={(e)=>setSubCategory(e.target.value)} className='w-full px-3 py-2'>
-            <option value="Topwear">Mixed Nuts</option>
-            <option value="Bottomwear">Jumbo Packs</option>
-            <option value="Winterwear">Snacks & Breakfast</option>
+            <option value="Mixed Nuts">Mixed Nuts</option>
+            <option value="Jumbo Packs">Jumbo Packs</option>
+            <option value="Snacks & Breakfast">Snacks & Breakfast</option>
           </select  >
         </div>
 
@@ -125,24 +125,24 @@ const Add = ({token}) => {
         <p className='mb-2 text-[#262220]' >Product Sizes</p>
         <div className='flex gap-3' >
 
-          <div onClick={()=>setSizes(prev => prev.includes("S") ? prev.filter(item => item !== "S") : [...prev,"S"] )} >
-            <p className={`${sizes.includes("S") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`} >100gm</p>
+          <div onClick={()=>setSizes(prev => prev.includes("100gm") ? prev.filter(item => item !== "100gm") : [...prev,"100gm"] )} >
+            <p className={`${sizes.includes("100gm") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`} >100gm</p>
           </div>
 
-          <div onClick={()=>setSizes(prev => prev.includes("M") ? prev.filter(item => item !== "M") : [...prev,"M"] )} >
-            <p className={`${sizes.includes("M") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>250gm</p>
+          <div onClick={()=>setSizes(prev => prev.includes("250gm") ? prev.filter(item => item !== "250gm") : [...prev,"250gm"] )} >
+            <p className={`${sizes.includes("250gm") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>250gm</p>
           </div>
 
-          <div onClick={()=>setSizes(prev => prev.includes("L") ? prev.filter(item => item !== "L") : [...prev,"L"] )} >
-            <p className={`${sizes.includes("L") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>500gm</p>
+          <div onClick={()=>setSizes(prev => prev.includes("500gm") ? prev.filter(item => item !== "500gm") : [...prev,"500gm"] )} >
+            <p className={`${sizes.includes("500gm") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>500gm</p>
           </div>
           
-          <div onClick={()=>setSizes(prev => prev.includes("XL") ? prev.filter(item => item !== "XL") : [...prev,"XL"] )} >
-            <p className={`${sizes.includes("XL") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>1kg</p>
+          <div onClick={()=>setSizes(prev => prev.includes("1kg") ? prev.filter(item => item !== "1kg") : [...prev,"1kg"] )} >
+            <p className={`${sizes.includes("1kg") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>1kg</p>
           </div>
           
-          <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter(item => item !== "XXL") : [...prev,"XXL"] )} >
-            <p className={`${sizes.includes("XXL") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>2kg</p>
+          <div onClick={()=>setSizes(prev => prev.includes("2kg") ? prev.filter(item => item !== "2kg") : [...prev,"2kg"] )} >
+            <p className={`${sizes.includes("2kg") ? "bg-[#b08463]" : "bg-[#E9E6E1]" } px-3 py-1 cursor-pointer`}>2kg</p>
           </div>
 
         </div>
