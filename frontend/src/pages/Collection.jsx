@@ -87,18 +87,18 @@ const Collection = () => {
         {/* CATEGORY FILTER */}
         <div className={`border border-[#b08463] bg-[#f7f1f0] pl-5 py-3 mt-6 ${showFilter ? '' : 'hidden'} sm:block`}>
           <p className='mb-3 text-sm text-[#714329] font-medium'>CATEGORIES</p>
-          <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
+          <div className='flex flex-col gap-2 text-sm font-light text-gray-800'>
             <p className='flex gap-2 text-[#262220]'>
-              <input className='w-3' type="checkbox" value={'Men'} onChange={toggleCategory}/>Nuts & Dates
+              <input className='w-3' type="checkbox" value={'Nuts & Dates'} onChange={toggleCategory}/>Nuts & Dates
             </p>
             <p className='flex gap-2 text-[#262220]'>
-              <input className='w-3' type="checkbox" value={'Women'} onChange={toggleCategory}/>Dried Fruits & Berries
+              <input className='w-3' type="checkbox" value={'Dried Fruits & Berries'} onChange={toggleCategory}/>Dried Fruits & Berries
             </p>
             <p className='flex gap-2 text-[#262220]'>
-              <input className='w-3' type="checkbox" value={'Kids'} onChange={toggleCategory}/>Seeds
+              <input className='w-3' type="checkbox" value={'Seeds'} onChange={toggleCategory}/>Seeds
             </p>
             <p className='flex gap-2 text-[#262220]'>
-              <input className='w-3' type="checkbox" value={'Men'} onChange={toggleCategory}/>Gift Packs
+              <input className='w-3' type="checkbox" value={'Gift Packs'} onChange={toggleCategory}/>Gift Packs
             </p>
           </div>
         </div>
@@ -107,13 +107,13 @@ const Collection = () => {
           <p className='mb-3 text-sm text-[#714329] font-medium'>TYPES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2 text-[#262220]'>
-              <input className='w-3' type="checkbox" value={'Topwear'} onChange={toggleSubCategory}/>Mixed Nuts
+              <input className='w-3' type="checkbox" value={'Mixed Nuts'} onChange={toggleSubCategory}/>Mixed Nuts
             </p>
             <p className='flex gap-2 text-[#262220]'>
-              <input className='w-3' type="checkbox" value={'Bottomwear'} onChange={toggleSubCategory}/>Jumbo Packs
+              <input className='w-3' type="checkbox" value={'Jumbo Packs'} onChange={toggleSubCategory}/>Jumbo Packs
             </p>
             <p className='flex gap-2 text-[#262220]'>
-              <input className='w-3' type="checkbox" value={'Winterwear'} onChange={toggleSubCategory}/>Snacks & Breakfast
+              <input className='w-3' type="checkbox" value={'Snacks & Breakfast'} onChange={toggleSubCategory}/>Snacks & Breakfast
             </p>
           </div>
         </div>

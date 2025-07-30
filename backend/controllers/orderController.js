@@ -115,6 +115,7 @@ const placeOrderStripe = async (req, res) => {
     res.json({ success: false, message: error.message });
   } 
 };*/
+
 // Placing order using Razorpay
 const placeOrderRazorPay = async (req, res) => {
  /* try {
@@ -151,6 +152,7 @@ const placeOrderRazorPay = async (req, res) => {
   } */
 };
 
+//verify Razorpay payment
 /*const verifyRazorpay = async (req, res) => {
   try {
     const { userId, razorpay_order_id } = req.body;

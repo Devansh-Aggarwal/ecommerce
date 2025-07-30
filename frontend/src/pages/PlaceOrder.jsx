@@ -36,8 +36,9 @@ const PlaceOrder = () => {
 
     setFormData((data) => ({ ...data, [name]: value }));
   };
-/*
-  const initPay = (order) => {
+
+  // function to initialize Razorpay payment from the backend response
+  /*const initPay = (order) => {
     const options = {
       key: import.meta.env.VITE_RAZORPAY_KEY_ID,
       amount: order.amount,
@@ -91,8 +92,8 @@ const PlaceOrder = () => {
       let orderData = {
         address: formData,
         items: orderItems,
-        amount: getCartAmount() + delivery_fee
-      }
+        amount: getCartAmount() + delivery_fee,
+      };
       switch (method) {
         //API calls for COD
         case "cod":
@@ -108,7 +109,7 @@ const PlaceOrder = () => {
             toast.error(response.data.message);
           }
           break;
-       /* case "stripe":
+        /* case "stripe":
           const responseStripe = await axios.post(
             backendUrl + "/api/order/stripe",
             orderData,
