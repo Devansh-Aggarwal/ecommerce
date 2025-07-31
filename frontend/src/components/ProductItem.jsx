@@ -9,12 +9,11 @@ const ProductItem = ({id,image,name,price}) => {
   return (
     <Link className='text-[#262220] cursor-pointer' to={`/product/${id}`}>
         <div className='overflow-hidden'>
-            <img className='hover:scale-110 transition ease-in-out' src={image[0]} alt="" />
+            <img className='hover:scale-110 transition-transform duration-500 ease-in-out' src={image[0]} alt="" />
         </div>
         <p className='pt-3 pb-1 text-sm'>{name}</p>
         <p className='text-sm font-medium'>{currency}{price}</p>
     </Link>
   )
 }
-
 export default ProductItem
