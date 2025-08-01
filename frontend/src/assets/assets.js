@@ -98,12 +98,12 @@ export const assets = {
 export const products = [
     {
         _id: "aaaaa",
-        name: "Women Round Neck Cotton Top",
-        description: "A lightweight, usually knitted, pullover shirt, close-fitting and with a round neckline and short sleeves, worn as an undershirt or outer garment.",
-        price: 800,
+        name: "Cashews(Kaju)",
+        description: "Cashews are low in sugar and rich in fiber, heart-healthy fats, and plant protein. They’re also a good source of copper, magnesium, and manganese — nutrients important for energy production, brain health, immunity, and bone health.",
+        price: 1500,
         image: [p_img1],
-        category: "Women",
-        subCategory: "Topwear",
+        category: "Nuts & Dates",
+        subCategory: "Jumbo Packs",
         sizes: ["S", "M", "L"],
         date: 1716634345448,
         bestseller: true
