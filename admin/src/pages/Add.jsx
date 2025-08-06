@@ -16,7 +16,7 @@ const Add = ({token}) => {
   const [price,setPrice] = useState("");
   const [category,setCategory] = useState("Nuts & Dates");
   const [subCategory,setSubCategory] = useState("Jumbo Packs");
-  const [bestseller,setBestseller] = useState(false);
+  const [bestseller,setBestseller] = useState(true);
   const [sizes,setSizes] = useState([]);
 
   const onSubmitHandler = async(e)=>{
@@ -148,9 +148,16 @@ const Add = ({token}) => {
         </div>
       </div>
 
-      <div className='flex gap-2 mt-2' >
-        <input onChange={()=>setBestseller(prev => !prev)} checked={bestseller} type="checkbox" id="bestseller" />
-        <label className='cursor-pointer' htmlFor="bestseller">Add to Bestsellers</label>
+      <div className="flex gap-2 mt-2">
+        <input
+          onChange={() => setBestseller((prev) => !prev)}
+          checked={bestseller}
+          type="checkbox"
+          id="bestseller"
+        />
+        <label className="cursor-pointer" htmlFor="bestseller">
+          Add to bestseller
+        </label>
       </div>
 
       <button type="submit" className='w-28 py-3 mt-4 bg-[#714329] text-white' >ADD</button>
